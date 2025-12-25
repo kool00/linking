@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: linear-gradient(135deg, #ffdde1, #ee9ca7);
     overflow: hidden;
     position: relative;
@@ -46,12 +45,9 @@
     to { transform: translateY(-15px); }
   }
 
-  .text-container {
-    max-width: 500px;
-  }
-
-  h1 { font-size: 1.8rem; margin-bottom: 10px; color: #ff4081; }
-  p { font-size: 1.1rem; margin-bottom: 10px; color: #444; }
+  .text-container { max-width: 500px; }
+  h1 { font-size: 1.5rem; margin-bottom: 10px; color: #ff4081; }
+  p { font-size: 0.9rem; margin-bottom: 10px; color: #444; }
 
   button {
     padding: 10px 20px;
@@ -89,7 +85,7 @@
   }
 
   .memories-img {
-    width: 70%;
+    width: 40%;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transition: transform 0.6s ease, opacity 0.6s ease;
@@ -105,7 +101,7 @@
 <canvas id="fireworks"></canvas>
 <div id="heart-container"></div>
 
-<!-- PAGE 1 -->
+<!-- Example Screens -->
 <div id="screen1" class="screen active">
   <img src="shinchan.jpeg.jpeg" class="shinchan">
   <div class="text-container">
@@ -115,7 +111,6 @@
   </div>
 </div>
 
-<!-- PAGE 2 -->
 <div id="screenLike" class="screen">
   <img src="shinchanheart.png.png" class="shinchan">
   <div class="text-container">
@@ -125,7 +120,6 @@
   </div>
 </div>
 
-<!-- NEW PAGE after YES -->
 <div id="screenGoodGirl" class="screen">
   <img src="shinchan.jpeg.jpeg" class="shinchan">
   <div class="text-container">
@@ -135,7 +129,6 @@
   </div>
 </div>
 
-<!-- PAGE 3 -->
 <div id="screenPlease" class="screen">
   <img src="shinchanheart.png.png" class="shinchan">
   <div class="text-container">
@@ -145,27 +138,24 @@
   </div>
 </div>
 
-<!-- PAGE 4 -->
 <div id="screenThank" class="screen">
   <img src="shinchan.jpeg.jpeg" class="shinchan">
   <div class="text-container">
-    <h1>❤️ Thank you for staying with me ❤️</h1>
+    <h1>❤ Thank you for staying with me ❤</h1>
     <p>Seriously saying , I still remember the night , I texted u for the first time, soo nervous , scared😥, i thought u wont reply , but as soon as i texted u replyed no 🫰🫰</p>
     <button onclick="showScreen('bond')">Next</button>
   </div>
 </div>
 
-<!-- PAGE 5 -->
 <div id="screenBond" class="screen">
   <img src="shinchan.jpeg.jpeg" class="shinchan">
   <div class="text-container">
     <h1>💞 Please don’t leave me 💞</h1>
-    <p>Still now ur the one listens to my stupid talks, In no friendship or relationship , i hv seen a gurl  text first , always the boys only text, but but!!!!, , u always text me first , i become soo excited seeing ur text 🥰🥰🥰🥰, my days starts with ur gud mrng and ends with ur gud night💕💕, soo much i am addicted to u, soo plzz dont forget me or lv me😃</p>
+    <p>Still now ur the one listens to my stupid talks, In no friendship or relationship , i hv seen a gurl text first , always the boys only text, but but!!!!, , u always text me first , i become soo excited seeing ur text 🥰🥰🥰🥰, my days starts with ur gud mrng and ends with ur gud night💕💕, soo much i am addicted to u, soo plzz dont forget me or lv me😃</p>
     <button onclick="showScreen('sorry')">Next</button>
   </div>
 </div>
 
-<!-- PAGE 6 -->
 <div id="screenSorry" class="screen">
   <img src="shinchan apologising png.png" class="shinchan">
   <div class="text-container">
@@ -175,18 +165,16 @@
   </div>
 </div>
 
-<!-- PAGE 7 -->
 <div id="screenTrust" class="screen">
   <img src="shinchan.jpeg.jpeg" class="shinchan">
   <div class="text-container">
     <h1>🤝 The trust you have on me 🤝</h1>
-    <p>Thankyou soo much for the trust u hv  on me , ig no gurl gives her insta password and all , u had trust on mee , thank u soooo much!!🫡🫡
+    <p>Thankyou soo much for the trust u hv on me , ig no gurl gives her insta password and all , u had trust on mee , thank u soooo much!!🫡🫡
       i am suree tht , in any point of time , I wont break ur trust💖</p>
     <button onclick="showScreen('heartfelt')">Next</button>
   </div>
 </div>
 
-<!-- PAGE 8 -->
 <div id="screenHeartfelt" class="screen">
   <img src="heart png.png" class="shinchan">
   <div class="text-container">
@@ -196,7 +184,6 @@
   </div>
 </div>
 
-<!-- PAGE 9 -->
 <div id="screenPrincess" class="screen">
   <img src="princess.png" class="shinchan">
   <div class="text-container">
@@ -206,34 +193,25 @@
   </div>
 </div>
 
-<!-- PAGE 10 (Memories) -->
+<!-- MEMORIES PAGE -->
 <div id="screenMemories" class="screen">
   <div class="text-container">
     <h1>📸 Our Memories 📸</h1>
-    
-    
-    <img id="memImage" class="memories-img slide-active" src="2.jpg" alt="Memory">
-    
-      <button onclick="prevMemory()">Previous</button>
-      <button onclick="nextMemory()">Next</button>
-    </div>
+    <img id="memImage" class="memories-img slide-active" src="mem1.jpg" alt="Memory">
+    <button onclick="prevMemory()">Previous</button>
+    <button onclick="nextMemory()">Next</button>
   </div>
 </div>
 
-<!-- PAGE BEFORE FINAL: OPEN TALK -->
 <div id="screenOpenTalk" class="screen">
   <img src="shinchan.jpeg.jpeg" class="shinchan">
   <div class="text-container">
-    <h1>🗣️ OPEN TALK 🗣️</h1>
-    <p>
- Idk, if i am special to U, or imp to u,
- ur always special to mee😘!!, U mean a lot to me 🥰, ur special to me more than everything😭, u think chumma chumma , i am saying u to eat no😣, it actually means a lot uk, i dont want to see u again getting admitted in hospital maahh😫😫, when u told ur hand is paining a lot, uk uk! , how much bad i felt , hurtingggg😣😣, can't see u in pain mahh, i wanted to always see u happy mahh💝💝,
-    </p>
+    <h1>🗣 OPEN TALK 🗣</h1>
+    <p>Idk, if i am special to U, or imp to u, ur always special to mee😘!!, U mean a lot to me 🥰, ur special to me more than everything😭, u think chumma chumma , i am saying u to eat no😣, it actually means a lot uk, i dont want to see u again getting admitted in hospital maahh😫😫, when u told ur hand is paining a lot, uk uk! , how much bad i felt , hurtingggg😣😣, can't see u in pain mahh, i wanted to always see u happy mahh💝💝,</p>
     <button onclick="showScreen('final')">Next</button>
   </div>
 </div>
 
-<!-- FINAL PAGE -->
 <div id="screenFinal" class="screen">
   <img src="shinchan.jpeg.jpeg" class="shinchan">
   <div class="text-container">
@@ -245,28 +223,21 @@
 <script>
 function showScreen(next) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  switch(next){
-    case 'like': document.getElementById('screenLike').classList.add('active'); break;
-    case 'goodGirl': document.getElementById('screenGoodGirl').classList.add('active'); break;
-    case 'please': document.getElementById('screenPlease').classList.add('active'); break;
-    case 'thank': document.getElementById('screenThank').classList.add('active'); break;
-    case 'bond': document.getElementById('screenBond').classList.add('active'); break;
-    case 'sorry': document.getElementById('screenSorry').classList.add('active'); break;
-    case 'trust': document.getElementById('screenTrust').classList.add('active'); break;
-    case 'heartfelt': document.getElementById('screenHeartfelt').classList.add('active'); break;
-    case 'princess': document.getElementById('screenPrincess').classList.add('active'); break;
-    case 'memories': document.getElementById('screenMemories').classList.add('active'); break;
-    case 'openTalk': document.getElementById('screenOpenTalk').classList.add('active'); break;
-    case 'final': document.getElementById('screenFinal').classList.add('active'); break;
-  }
+  const screenMap = {
+    like: 'screenLike', goodGirl: 'screenGoodGirl', please: 'screenPlease',
+    thank: 'screenThank', bond: 'screenBond', sorry: 'screenSorry',
+    trust: 'screenTrust', heartfelt: 'screenHeartfelt', princess: 'screenPrincess',
+    memories: 'screenMemories', openTalk: 'screenOpenTalk', final: 'screenFinal'
+  };
+  document.getElementById(screenMap[next]).classList.add('active');
 }
 
-/* Hearts */
+/* Hearts animation */
 function startHearts() {
   setInterval(() => {
     const heart = document.createElement('div');
     heart.classList.add('heart');
-    heart.innerHTML = '❤️';
+    heart.innerHTML = '❤';
     heart.style.left = Math.random() * 100 + 'vw';
     heart.style.fontSize = Math.random() * 20 + 10 + 'px';
     heart.style.animationDuration = 4 + Math.random() * 3 + 's';
@@ -276,20 +247,24 @@ function startHearts() {
 }
 startHearts();
 
-/* Fireworks */
+/* Fireworks animation */
 const canvas = document.getElementById("fireworks");
 const ctx = canvas.getContext("2d");
 let W = canvas.width = window.innerWidth;
 let H = canvas.height = window.innerHeight;
 window.onresize = () => { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; };
+
 const particles = [];
 function random(min,max){return Math.random()*(max-min)+min;}
+
 function createFirework(){
-  const x=random(0,W), y=H, color=`hsl(${random(0,360)},100%,60%)`;
+  const x = random(0,W), y = H;
+  const color = `hsl(${random(0,360)}, 100%, 60%)`;
   for(let i=0;i<60;i++){
     particles.push({x,y,r:random(1,3),dx:random(-4,4),dy:random(-10,-4),life:random(60,120),color});
   }
 }
+
 function drawFireworks(){
   ctx.clearRect(0,0,W,H);
   for(let i=0;i<particles.length;i++){
@@ -300,33 +275,56 @@ function drawFireworks(){
     ctx.fill();
     p.x+=p.dx; p.y+=p.dy; p.dy+=0.15; p.life--;
   }
-  particles.forEach((p,i)=>{ if(p.life<=0) particles.splice(i,1); });
+  for(let i=particles.length-1;i>=0;i--){
+    if(particles[i].life<=0) particles.splice(i,1);
+  }
   requestAnimationFrame(drawFireworks);
 }
 setInterval(createFirework,400);
 drawFireworks();
 
-/* Memories slideshow */
-let memIndex = 1;
-const memTotal = 10;
+/* Dynamic Memories */
+const memoryImages = [
+  '2.jpg',
+  'chumma 2.jpg',
+  'brother pic.jpg',
+  'selfie 1.jpg',
+  'selfie 2.jpg',
+  'selfie 3.jpg',
+  'chumma.jpg',
+  'mem8.jpg',
+  'mem9.jpg',
+  'mem10.jpg'
+];
+
+let memIndex = 0;
 const memImg = document.getElementById('memImage');
+memImg.src = memoryImages[memIndex];
+
 function showMemory(idx, dir){
   memImg.classList.remove('slide-active');
-  memImg.classList.add(dir === 'next' ? 'slide-in-right' : 'slide-in-left');
+  memImg.classList.add(dir==='next'?'slide-in-right':'slide-in-left');
   setTimeout(()=>{
-    memImg.src = `mem${idx}.jpg`;
+    memImg.src = memoryImages[idx];
     memImg.classList.remove('slide-in-right','slide-in-left');
     memImg.classList.add('slide-active');
   },300);
 }
+
 function nextMemory(){
-  if(memIndex < memTotal) { memIndex++; showMemory(memIndex, 'next'); }
-  else showScreen('openTalk');
+  if(memIndex < memoryImages.length-1){ 
+    memIndex++; 
+    showMemory(memIndex,'next'); 
+  } else showScreen('openTalk');
 }
+
 function prevMemory(){
-  if(memIndex > 1) { memIndex--; showMemory(memIndex, 'prev'); }
+  if(memIndex > 0){ 
+    memIndex--; 
+    showMemory(memIndex,'prev'); 
+  }
 }
 </script>
-
 </body>
 </html>
+
