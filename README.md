@@ -35,7 +35,7 @@
   .active { display: flex; opacity: 1; transform: scale(1); }
 
   .shinchan {
-    width: 150px;
+    width: 200px;
     height: auto;
     animation: float 2s ease-in-out infinite alternate;
   }
